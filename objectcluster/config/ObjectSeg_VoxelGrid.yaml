@@ -1,0 +1,30 @@
+GridSize : 0.5    # cm
+LidarHigh : 0.408
+minGridCloudNum : 20 #每个栅格的最小点云数
+maxGrassHigh : 0.15
+AbsObjElevThr : 0.4
+
+input_Lidar : "/zvision_lidar_points"
+camera_input_topic: "/camera/depth/image_rect_raw"
+
+lidar2camera_R: [0.9994,-0.006152,0.034226,
+                -0.034151,0.011869,0.99935,
+                -0.0065542,-0.99991,0.01165]
+
+lidar2camera_pretranslate: [-0.00305,0.42377,-0.09468]
+
+
+# intrinsic parameter of deep camera
+DeepCameraHigh: 0.25
+dfx: 429.1876220703125
+dfy: 429.1876220703125
+dcx: 425.7007446289062
+dcy: 234.9811248779297
+kScaleFactor: 1000
+dcamera_R2lidar: [1,0,0,0,-1,0,0,0,1]
+dcamera_T2lidar: [0,0.2,0]
+
+fx: 1264.252
+fy: 1264.52
+cx: 650.92
+cy: 536.64
